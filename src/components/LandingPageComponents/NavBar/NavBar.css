@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+  html[dir="rtl"] .Hide {
+    transform: translate(184px, -75px) rotate3d(0.8, 0.8, 0.7, 30deg) scale(0.2)
+      skew(8deg, 0deg);
+    transition: 1s;
+    z-index: 2;
+    padding: 0;
+    top: 0;
+    top: 50px;
+    z-index: -2;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    transform-origin: left top;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .Hide {
+    transform: translate(-184px, -75px) rotate3d(0.8, 0.8, 0.7, 30deg)
+      scale(0.2) skew(8deg, 0deg);
+    transition: 1s;
+    z-index: 2;
+    padding: 0;
+    top: 0;
+    top: 50px;
+    z-index: -2;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    transform-origin: left top;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+  }
+  .Hide a {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    transform: translateX(350px);
+  }
+  .Show {
+    transform: translate(0, 0) rotate3d(0, 0, 0, 0deg) scale(1) skew(0deg, 0deg);
+    transition: 0.7s;
+    z-index: 2;
+    padding: 0;
+    top: 0;
+    top: 50px;
+    z-index: 20;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+
+    width: 100%;
+    transform-origin: right;
+    overflow: hidden;
+  }
+  .Show a {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}

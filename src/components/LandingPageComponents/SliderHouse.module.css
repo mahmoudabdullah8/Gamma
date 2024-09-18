@@ -1,0 +1,58 @@
+.slider-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: teal;
+    cursor: pointer;
+    z-index: 2;
+    background-color: transparent;
+  }
+  
+  .nextArrow {
+    right: 40%;
+    bottom:0;
+    position: absolute;
+  }
+  
+  .prevArrow {
+    left: 40%;
+    bottom:0;
+    position: absolute;
+  }
+  
+  .controlContainer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+ 
+  }
+  
+  .slideNumber {
+    font-size: 1rem;
+    margin: 0 20px;
+    font-weight: bold;
+    color: black;
+     
+  }
+  
+  @media (max-width :550px) {
+    .slideNumber {
+      font-size: 0.7rem;
+      margin: 0 20px;
+      font-weight: bold;
+      color: black;
+       
+    }
+  }

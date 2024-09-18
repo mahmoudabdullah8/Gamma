@@ -1,0 +1,33 @@
+.loader {
+  
+  display: grid;
+  border-radius: var(--border-radius-full);
+  -webkit-mask: radial-gradient(farthest-side, #0000 40%, #000 41%);
+  background: linear-gradient(0deg, var(--color-1) 50%, var(--color-3) 0)
+      center/4px 100%,
+    linear-gradient(90deg, var(--color-1) 50%, var(--color-2) 0) center/100% 4px;
+  background-repeat: no-repeat;
+  animation: s3 1s infinite steps(12);
+ 
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: var(--border-radius-full);
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.loader::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+@keyframes s3 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
